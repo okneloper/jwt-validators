@@ -40,7 +40,7 @@ class UniqueJtiValidatorTest extends \PHPUnit_Framework_TestCase
 
         $this->assertFalse($validator->validates($token));
 
-        $this->assertEquals("Your token is missing the required jti claim", $validator->getErrors()[0]);
+        $this->assertEquals("Token is missing the required jti claim", $validator->getErrors()[0]);
     }
 
     /**

@@ -18,7 +18,7 @@ class ClaimPresenceValidator extends TokenValidator
      * ClaimPresenseValidator constructor.
      * @param string $claim_name
      */
-    public function __construct($claim_name, $message = "Your token is missing the required %s claim")
+    public function __construct($claim_name, $message = "Token is missing the required %s claim")
     {
         $this->claim_name = $claim_name;
         $this->message = sprintf($message, $this->claim_name);
